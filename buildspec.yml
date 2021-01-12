@@ -3,12 +3,12 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo Build Starting on `date`
+      - echo 빌드 시작...
       - chmod +x ./gradlew
       - ./gradlew build -x test
   post_build:
     commands:
-      - echo $(basename ./build/libs/*.jar)
+      - echo 빌드 성공...!
       - pwd
 
 cache:
