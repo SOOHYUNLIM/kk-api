@@ -3,3 +3,9 @@ os: linux
 files:
   - source:  /
     destination: /home/was/
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: admin
