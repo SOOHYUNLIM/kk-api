@@ -1,0 +1,29 @@
+logging:
+  level:
+    root: info
+
+server:
+  port: 9999
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://kk-postgre-rds.cd4nzz3az8w4.ap-northeast-2.rds.amazonaws.com/kk
+    username: root
+    password: rlxhdqks001!
+    connection-test-query: SELECT now()
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        default_schema: api
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      base-path: /monitor
+      path-mapping:
+        health: health-check
