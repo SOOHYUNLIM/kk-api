@@ -1,6 +1,9 @@
 logging:
   level:
     root: info
+    com:
+      amazonaws:
+        xray: info
 
 server:
   port: 9999

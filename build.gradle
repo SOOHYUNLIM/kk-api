@@ -31,13 +31,10 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    compile 'com.amazonaws:aws-xray-recorder-sdk-core:2.7.1'
 }
 
 test {
     useJUnitPlatform()
-}
-
-bootRun {
-    String disco = "/home/config/xray/disco"
-    jvmArgs = ["-javaagent:$disco/disco-java-agent.jar=pluginPath=$disco/disco-plugins"]
 }
