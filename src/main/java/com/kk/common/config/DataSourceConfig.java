@@ -16,7 +16,6 @@ public class DataSourceConfig {
     @Bean
     public DataSource dataSource(DataSourceProperties properties) {
         DataSource dataSource = properties.initializeDataSourceBuilder().type(HikariDataSource.class).build();
-        TracingDataSource tracingDataSource = new TracingDataSource(dataSource);
-        return tracingDataSource;
+        return TracingDataSource.decorate(dataSource);
     }
 }
