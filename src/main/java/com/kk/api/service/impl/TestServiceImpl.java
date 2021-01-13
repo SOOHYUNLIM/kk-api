@@ -1,6 +1,5 @@
 package com.kk.api.service.impl;
 
-import com.amazonaws.xray.spring.aop.XRayEnabled;
 import com.kk.api.entity.Test;
 import com.kk.api.repository.TestRepository;
 import com.kk.api.service.TestService;
@@ -11,7 +10,6 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-@XRayEnabled
 public class TestServiceImpl implements TestService {
 
     private final TestRepository testRepository;
