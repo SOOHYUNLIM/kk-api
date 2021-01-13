@@ -15,6 +15,7 @@ spring:
     username: root
     password: rlxhdqks001!
     connection-test-query: SELECT now()
+    jdbc-interceptors: com.amazonaws.xray.sql.postgres.TracingInterceptor
   jpa:
     hibernate:
       ddl-auto: update
