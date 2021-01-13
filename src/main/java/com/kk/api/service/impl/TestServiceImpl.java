@@ -23,7 +23,6 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public Test registerTest(Test test) {
-        System.out.println(test);
         return testRepository.save(test);
     }
 }
