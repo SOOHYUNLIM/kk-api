@@ -33,6 +33,6 @@ public class AWSXrayConfig {
 
     @Bean
     public Filter TracingFilter() {
-        return new AWSXRayServletFilter("Knock-Kncok");
+        return new AWSXRayServletFilter("kk-api");
     }
 }

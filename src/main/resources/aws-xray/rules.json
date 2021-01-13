@@ -8,7 +8,7 @@
     {
       "description": "Health Check",
       "host": "*",
-      "service_name": "*",
+      "service_name": "kk-api",
       "http_method": "GET",
       "url_path": "/monitor/health-check",
       "fixed_target": 0,
@@ -17,7 +17,7 @@
     {
       "description": "전체 목록 가져오기",
       "host": "*",
-      "service_name": "*",
+      "service_name": "kk-api",
       "http_method": "GET",
       "url_path": "/v1/test/get-all",
       "fixed_target": 0,
@@ -26,7 +26,7 @@
     {
       "description": "테스트 등록하기",
       "host": "*",
-      "service_name": "*",
+      "service_name": "kk-api",
       "http_method": "POST",
       "url_path": "/v1/test/registration",
       "fixed_target": 0,
