@@ -1,0 +1,5 @@
+{
+  "serviceName": "kk-api",
+  "tracingEnabled": true,
+  "collectSqlQueries": true
+}
