@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@XRayEnabled
 @RequiredArgsConstructor
 @RequestMapping("/v1/test")
 @RestController
