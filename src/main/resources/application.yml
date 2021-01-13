@@ -27,3 +27,8 @@ management:
       base-path: /monitor
       path-mapping:
         health: health-check
+
+com:
+  amazonaws:
+    xray:
+      configFile: classpath:xray-agent.json
