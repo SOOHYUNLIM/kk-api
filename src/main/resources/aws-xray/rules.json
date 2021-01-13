@@ -1,10 +1,15 @@
 {
   "version": 1,
-  "default": {
-    "fixed_target": 1,
-    "rate": 1
-  },
   "rules": [
+    {
+      "description": "Query",
+      "host": "*",
+      "service_name": "*",
+      "http_method": "*",
+      "url_path": "*",
+      "fixed_target": 0,
+      "rate": 0.05
+    },
     {
       "description": "전체 목록 가져오기",
       "host": "*",

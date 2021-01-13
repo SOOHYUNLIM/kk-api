@@ -32,8 +32,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-    compile 'com.amazonaws:aws-xray-recorder-sdk-spring:2.4.0'
-    compile 'com.amazonaws:aws-xray-recorder-sdk-sql-postgres:2.4.0'
+    compile 'com.amazonaws:aws-xray-recorder-sdk-spring:2.5.0'
+    compile "com.amazonaws:aws-xray-recorder-sdk-sql:2.5.0"
+//    compile 'com.amazonaws:aws-xray-recorder-sdk-sql-postgres:2.4.0'
 }
 
 test {

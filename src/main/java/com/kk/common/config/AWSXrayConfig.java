@@ -29,6 +29,7 @@ public class AWSXrayConfig {
         builder.withSamplingStrategy(new LocalizedSamplingStrategy(ruleFile));
         AWSXRayRecorder globalRecorder = builder.build();
         AWSXRay.setGlobalRecorder(globalRecorder);
+        AWSXRay.beginSegment("kk-api");
     }
 
     @Bean
