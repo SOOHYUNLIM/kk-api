@@ -36,8 +36,3 @@ dependencies {
 test {
     useJUnitPlatform()
 }
-
-bootRun {
-    String disco = "C:/Users/etoos/disco"
-    jvmArgs = ["-javaagent:$disco/disco-java-agent.jar=pluginPath=$disco/disco-plugins"]
-}

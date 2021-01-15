@@ -4,10 +4,12 @@ import com.kk.api.entity.Test;
 import com.kk.api.repository.TestRepository;
 import com.kk.api.service.TestService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class TestServiceImpl implements TestService {
@@ -21,6 +23,8 @@ public class TestServiceImpl implements TestService {
 
     @Override
     public Test registerTest(Test test) {
-        return testRepository.save(test);
+        Test newTest = testRepository.save(test);
+        log.info("Register Test... > {}", test);
+        return newTest;
     }
 }

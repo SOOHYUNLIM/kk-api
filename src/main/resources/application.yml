@@ -1,6 +1,8 @@
 logging:
   level:
     root: info
+  file:
+    path: logs
 
 server:
   port: 9999
