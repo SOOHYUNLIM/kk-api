@@ -1,9 +1,6 @@
 logging:
   level:
     root: info
-    com:
-      amazonaws:
-        xray: info
 
 server:
   port: 9999
@@ -30,8 +27,3 @@ management:
       base-path: /monitor
       path-mapping:
         health: health-check
-
-com:
-  amazonaws:
-    xray:
-      configFile: classpath:xray-agent.json
